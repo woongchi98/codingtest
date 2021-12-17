@@ -8,7 +8,21 @@
  ~~
  > 00시 13분 30초
 
+입력조건 0 <= N <= 23
+출력조건 3이 하나라도 포함되는 모든 경우의 수를 출력
+
 입력 예시 5
 출력 예시 11475
 '''
 
+## 24시간 초로 변환 > 86400 밖에 안됨
+## 완전 탐색
+def solution(N):
+    count = 0
+    for k in range(N+1):
+        for j in range(60):
+            for i in range(60):
+                if '3' in str(i):
+                    count += 1
+                    
+    return count
