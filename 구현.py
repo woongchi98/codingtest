@@ -66,6 +66,8 @@ def solution(N, direction):
             
         if nx < 1 or ny < 1 or nx > N or ny > N:
             continue
+            #여기서 continue를 하면 이미 nx ny는 범위를 초과했는데 왜 되는거지?
+            #그게 아니고 nx ny를 매번 새로 지정해주니까!!! nx = nx+ 형태가 아님 ..
             
         x, y = nx, ny
     return (x,y)
