@@ -7,6 +7,7 @@ def solution(participant, completion):
     return(participant)
 # 이론상으로는 맞는것 같은데 계속 생각과는 다르게 실행된다. 왜 그럴까?
 # 해결 못함
+### 다시 보니까 둘 다 i로 해놔서 그렇네!
 
 def solution(participant, completion):
     for part in participant: 
